@@ -7,11 +7,10 @@ public class _2_替换空格 {
 
     public static void main(String[] args) {
            String a = "we  ad ad";
+           System.out.println(a.replace(" ", "%20"));
+
            StringBuffer aa = new StringBuffer();
          ArrayList<Integer> list = new ArrayList();
-
-         //listNode node = listNode.next;
-
          char[] chars = a.toCharArray();
       for (int i= 0; i<chars.length;i++){
           if(chars[i]==' '){

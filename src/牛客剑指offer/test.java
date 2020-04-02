@@ -1,10 +1,29 @@
 package 牛客剑指offer;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class test {
 
      public static void main(String[] args) {
+         ArrayList list = new ArrayList();
+
+     list.add(1);
+     list.add(2);
+
+
+  list.stream().mapToInt(i-> (int) i).sum();
+
+
+
+
+
+
+         String s1 = new String("a") + new String("b");
+         // String s2 = new String("hello"); // char[]{'h','e','l','l','o'}
+        // s1.intern();
+         System.out.println(s1=="ab");
+
          System.out.println(56465%19);
          System.out.println(56465&18);
 
