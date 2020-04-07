@@ -25,10 +25,7 @@ public class _3_凑零钱问题 {
 
         for(int i = 0; i< dp.length;i++){
             for(int j=0; j<coins.length; j++){
-                if(i-coins[j]<0){
-                    continue;
-                }
-                if(i-coins[i]<0) continue;
+                if(i-coins[j]<0) continue;
                 dp[i] = Math.min(dp[i],1+dp[i-coins[i]]);
             }
         }
@@ -38,7 +35,7 @@ public class _3_凑零钱问题 {
     }
 
 
-    //普通动规
+    //普通递归
     public static int dp(int[] coins, int amount){
 
          if(amount==0){
